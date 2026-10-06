@@ -1,8 +1,8 @@
 class PrinboxCli < Formula
   desc "Command-line inbox for the pull requests waiting on you, through the GitHub CLI"
   homepage "https://github.com/creeonix/prinbox"
-  url "https://github.com/creeonix/prinbox/releases/download/v0.5.0/prinbox-0.5.0-macos.tar.gz"
-  sha256 "afa1a96459f01d7643a5139f1dd0028bcca335d2331e864d0ce9c60e4179aa40"
+  url "https://github.com/creeonix/prinbox/releases/download/v0.6.0/prinbox-0.6.0-macos.tar.gz"
+  sha256 "d7bab41dfbcf62807046c5b8c6dd96343b438d0ecadcf5e521240cd199ee8f27"
   license "MIT"
 
   depends_on "gh"
@@ -10,6 +10,13 @@ class PrinboxCli < Formula
 
   def install
     bin.install "prinbox"
+  end
+
+  def caveats
+    <<~EOS
+      To serve the inbox to AI agents over the Model Context Protocol:
+        claude mcp add prinbox -- prinbox mcp
+    EOS
   end
 
   test do
