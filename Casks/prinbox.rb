@@ -1,6 +1,6 @@
 cask "prinbox" do
-  version "0.6.0"
-  sha256 "84b28c02f16cdc3e6e5776dac2785a45430f72fdd6ec192d5b57700e4a6a95ff"
+  version "0.7.0"
+  sha256 "be697749a28e604e93de2abdb9952905683fb2c544d676fb6e8a7b2e58d986fd"
 
   url "https://github.com/creeonix/prinbox/releases/download/v#{version}/PRInbox-#{version}.dmg"
   name "PRInbox"

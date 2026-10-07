@@ -1,8 +1,8 @@
 class PrinboxCli < Formula
   desc "Command-line inbox for the pull requests waiting on you, through the GitHub CLI"
   homepage "https://github.com/creeonix/prinbox"
-  url "https://github.com/creeonix/prinbox/releases/download/v0.6.0/prinbox-0.6.0-macos.tar.gz"
-  sha256 "d7bab41dfbcf62807046c5b8c6dd96343b438d0ecadcf5e521240cd199ee8f27"
+  url "https://github.com/creeonix/prinbox/releases/download/v0.7.0/prinbox-0.7.0-macos.tar.gz"
+  sha256 "460c78eaee79f1d2838947e87b686ca8e6031c302b121126f01c6f08c5d7257a"
   license "MIT"
 
   depends_on "gh"
