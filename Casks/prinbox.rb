@@ -1,6 +1,6 @@
 cask "prinbox" do
-  version "0.8.0"
-  sha256 "08f5974f13840081202c1984481ea56ad1dc27580e63f4bf5d157f333bb0ee17"
+  version "0.8.1"
+  sha256 "7db2e718b565b50a4d7b9c4c4bcacfa8ae3255ae76d50fbc6b7c6386ba8f2cdb"
 
   url "https://github.com/creeonix/prinbox/releases/download/v#{version}/PRInbox-#{version}.dmg"
   name "PRInbox"
@@ -25,11 +25,6 @@ cask "prinbox" do
   ]
 
   caveats <<~EOS
-    PRInbox is signed ad hoc, not with an Apple Developer ID, so macOS blocks the first launch.
-    Either install with
-      brew install --cask --no-quarantine creeonix/tap/prinbox
-    or right-click PRInbox in Applications once and choose Open.
-
     PRInbox needs the GitHub CLI, signed in:
       brew install gh && gh auth login
   EOS
